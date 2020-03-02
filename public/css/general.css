@@ -1,0 +1,54 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+/* Estilos para todos los modals */
+
+.modal-header {
+    background: gray !important;
+}
+
+.modal-header-info {
+    background: gray !important;
+    padding-right: 10px;
+}
+
+.modal-title {
+    color: #ffffff !important;
+}
+
+.modal-folio {
+    color: black;
+}
+
+.modal-folio {
+    padding-top: 30px
+}
+
+
+/* Avance economico */
+modal-separator {
+    width: 100%;
+    border-top: 1px solid #939393;
+}
+.modal-table-thead{
+    font-weight: bold;
+}
+.list-payments{
+    padding-top:10px;
+}
+.center {
+    justify-content: center;
+}

@@ -1,0 +1,26 @@
+.section-home {
+    background: url("../../../images/fondo4.jpg");    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.container-home {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 96vh;
+}
+.div-home{
+    background-color:	#E0E0E0; 
+    opacity:78%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    .section-home {
+        background: url("../../../images/fondo4.jpg");
+        background-size: cover;
+    }
+}
