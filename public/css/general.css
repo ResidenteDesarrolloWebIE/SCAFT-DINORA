@@ -14,30 +14,25 @@ footer {
     color: white;
 }
 
-/* Estilos para todos los modals */
 
+
+/* Estilos para todos los modals */
 .modal-header {
     background: gray !important;
 }
-
 .modal-header-info {
     background: gray !important;
     padding-right: 10px;
 }
-
 .modal-title {
     color: #ffffff !important;
 }
-
 .modal-folio {
     color: black;
 }
-
 .modal-folio {
     padding-top: 30px
 }
-
-
 /* Avance economico */
 modal-separator {
     width: 100%;

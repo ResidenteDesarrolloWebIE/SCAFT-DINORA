@@ -1,11 +1,11 @@
 /* Inicio de sesion */
 .login-background{
-    background-image: url('/../../images/fondo2.jpg');background-position: center;background-repeat: no-repeat;
+    background-image: url('/../../images/fondo11.jpg');background-position: center;background-repeat: no-repeat;
     background-attachment: fixed;background-size: cover;background-color: "#66999";
     background-size: cover;background-color: black;filter: contrast(85%);opacity: 0.95;}
 .login-icon-backgroud{background-color:#225B7C}
 .login-text-center{display: flex;align-items: center;justify-content: center;min-height: 96vh;}
-.login-image{margin-top:30px;width: 90%;height: 160px;-webkit-filter: saturate(1.5);filter: saturate(1.5); }
+.login-image{margin-top:30px; display: block; margin-left: 6%; margin-right: auto; width:70%;height: 80px;-webkit-filter: saturate(1.5);filter: saturate(1.5); }
 .login-icon-color{background-color:#1966c4;}
 .login-btn{border-color:#0000;font-weight: bold;background-color:#225B7C; color:white;
     width:200px;border-radius:8px; height: 40px;}

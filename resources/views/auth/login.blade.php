@@ -22,7 +22,7 @@
                     <div class="card">
                         <div class="card-header text-center" style="background-color:white">
                             <h4>{{ __('INICIO DE SESIÓN') }}</h4>
-                                <img class="login-image" src="{{ asset('images/logo1.png')}}" class="card-img-top">
+                                <img class="login-image" src="{{ asset('images/scaft3.png')}}" class="card-img-top">
                         </div>
 
                         <div class="card-body">
