@@ -6,7 +6,8 @@
 <script src="{{asset('packages/popper-1.16.0/popper.min.js') }}" ></script>
 <script src="{{asset('packages/bootstrap-4.4.1/js/bootstrap.min.js') }}"></script>
 <!-- <script src="{{ asset('packages/boostrap/bootstrap.min.js')}}"></script> -->
-<script src="{{asset('packages/fontawesome-5.0.7/fontawesome.js') }}"></script>
+<!-- <script src="{{asset('packages/fontawesome-5.0.7/fontawesome.js') }}"></script> -->
+<script src="{{asset('packages/fontawesome-5.12.1/js/fontawesome.js') }}"></script>
 <script src="{{asset('packages/fotoroma-4.6.4/fotorama.js') }}" ></script>
 <script src="{{asset('packages/datatables-1.10.7/jquery.dataTables.min.js') }}" ></script>
 
@@ -19,7 +20,6 @@
 <!-- JS usado en las pestallas de los clientes-->
 <script src="{{ asset('js/client/general.js') }}"></script>
 
-<script src="{{ asset('packages/boostrap/bootstrap.min.js')}}"></script>  -->
 <script>
   function addActiveClass(){
     var objs = document.getElementsByTagName('a');          // take all 'a' tags

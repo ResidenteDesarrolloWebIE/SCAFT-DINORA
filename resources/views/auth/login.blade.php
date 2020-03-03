@@ -18,20 +18,21 @@
     <body class="login-background">
         <div class="container">
             <div class="row login-text-center">
-                <div class="col-xs-12 col-sm-10 col-md-6">
-                    <div class="card">
-                        <div class="card-header text-center" style="background-color:white">
-                            <h4>{{ __('INICIO DE SESIÓN') }}</h4>
-                                <img class="login-image" src="{{ asset('images/scaft3.png')}}" class="card-img-top">
+                <div class="col-xs-8 col-sm-6 col-md-5">
+                    <div class="card" id="card1" >
+
+                        <div class="card-header text-center" style="background-color:#DEDBDB">
+                            <h4>{{ __('BIENVENIDO') }}</h4>
+                                <img class="login-image" src="{{ asset('images/scaft4.png')}}" class="card-img-top">
                         </div>
 
-                        <div class="card-body">
+                        <div class="card-body" style="background-color:#DEDBDB">
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="form-group row">
                                     <div class="input-group ">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text" style="background-color:#225B7C" id="basic-addon1">
+                                            <span class="input-group-text" style="background-color:#3982ab" id="basic-addon1">
                                                 <i class="fas fa-user" style='color:white'></i></span>
                                         </div>
                                         <input id="email" type="email"
@@ -47,7 +48,7 @@
                                 <div class="form-group row">
                                     <div class="input-group ">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text login-icon-color" id="pass" style="background-color:#225B7C"><i
+                                            <span class="input-group-text login-icon-color" id="pass" style="background-color:#3982ab"><i
                                                     class="fas fa-key" style='color:white'></i></span>
                                         </div>
                                         <input id="password" type="password"
@@ -56,7 +57,7 @@
 
                                         <div class="input-group-append">
                                             <span class="input-group-text" onclick="showPassword()"
-                                                style="background-color:#225B7C"><i class="fas fa-eye"
+                                                style="background-color:#3982ab"><i class="fas fa-eye"
                                                     style='color:white'></i></span>
                                         </div>
                                         @error('password')
