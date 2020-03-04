@@ -2,14 +2,14 @@
     <div class="loader"></div>
 </div>
 <header class="encabezado">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-sm  fixed-top" style="background-color:#14283E" >
+        <button class="navbar-toggler navbar-toggler-right"  style="background-color:#00456b" type="button" data-toggle="collapse" data-target="#navbarToggler">
+            <span class="navbar-toggler-icon" ></span>
         </button>
         <a href="{{url('/home')}}" class="site-logo text-center">
-            <img class="logo" src="{{ asset('images/logo1.png') }}" alt="">
+            <img class="logo" src="{{ asset('images/scaft4.png') }}" alt="">
         </a>
-        <div class="collapse navbar-collapse collapse offset-md-5" id="navbarToggler">
+        <div class="collapse navbar-collapse collapse offset-md-3" id="navbarToggler">
             <ul class="nav navbar-nav" id="menuprincipal">
                 @if(Auth::user()->hasRole('admin'))
                     <li class="nav-item">
@@ -20,7 +20,7 @@
                     </li>
                 @else
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/home')}}">Inicio</a>
+                        <a class="nav-link " href="{{url('/home')}}">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/supplies')}}">Suministros</a>
