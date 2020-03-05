@@ -152,12 +152,3 @@
 .do-item:hover .do-info {
     transform: rotate3d(0, 1, 0, -180deg);
 }
-
-.backgroud-icon {
-    background-color: #436999;
-    width: 30px;
-    height: 30px;
-    border-width: .5px;
-    border-style: solid;
-    border-color: #000000;
-}
