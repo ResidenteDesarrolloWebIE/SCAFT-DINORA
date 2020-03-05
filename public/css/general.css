@@ -8,7 +8,7 @@ body {
 }
 
 footer {
-    background-color: #14283E;
+    background-color:#19202C;
     bottom: 0;
     width: 100%;
     color: white;
@@ -16,19 +16,23 @@ footer {
 
 
 
+
+
+
 /* Estilos para todos los modals */
 .modal-header {
-    background: gray !important;
+    background:linear-gradient(to left , rgb(27, 29, 29), rgb(4, 85, 114));
 }
-.modal-header-info {
-    background: gray !important;
+.modal-header-info{
+    background:linear-gradient(to left , rgb(27, 29, 29), rgb(4, 85, 114));
     padding-right: 10px;
+    color: white;
 }
 .modal-title {
     color: #ffffff !important;
 }
 .modal-folio {
-    color: black;
+    color: #ffffff;
 }
 .modal-folio {
     padding-top: 30px
@@ -36,7 +40,7 @@ footer {
 /* Avance economico */
 modal-separator {
     width: 100%;
-    border-top: 1px solid #939393;
+    border-top: 1px solid #411313;
 }
 .modal-table-thead{
     font-weight: bold;

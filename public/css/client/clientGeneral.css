@@ -1,5 +1,6 @@
 .section-projects {
-    background-image: url(../../images/fondo14.png);
+    background-image: url(../../images/eng3.png);
+
     color: white;
     /* background: #424141;
     color: #fff; */
@@ -22,6 +23,7 @@
 }
 .list-projects{
     margin-top: 25px;
+    right: 10%;
 }
 .item-projects{
     margin-left: 40px;
@@ -54,11 +56,11 @@
 
 .t-stroke {
     color: #f3f1f1;
-    -moz-text-stroke-width: 2px;
-    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-width: -4px;
+    -webkit-text-stroke-width: -7px;
     -moz-text-stroke-color: #ebe1e1;
     -webkit-text-stroke-color: #f3e7e7;
-    line-height: 170px;
+    line-height: 310px;
 }
 
 .do-circle {
@@ -78,6 +80,7 @@
 
 .do-item-circle {
     max-width: 250px;
+    left: 25%;
 }
 
 /* Imagen y color del fondo del frente del circulo */

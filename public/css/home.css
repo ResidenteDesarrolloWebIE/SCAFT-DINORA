@@ -100,12 +100,8 @@
       position:relative
     }
 
-    .btn{
-        color: #000000;
-    }
-  
 
-    /* .boton1{
-  
+    .boton1{
+      background:linear-gradient(to left , rgb(4, 85, 114), rgb(64, 70, 70));
     }
-    */
+   

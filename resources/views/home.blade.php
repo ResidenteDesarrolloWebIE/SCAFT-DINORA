@@ -5,7 +5,7 @@
 	@include('layouts.partials._navigationBar')
 	<div class="container-home">
 
-		<div class="testimotionals">
+		<div class="testimotionals co">
 			<div class="card">
 				<div class="layer">
 
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-		<div class="testimotionals">
+		<div class="testimotionals col-md-4">
 			<div class="card">
 				<div class="layer">
 
@@ -39,7 +39,7 @@
 					<div class="details">
 						<h2> <br><span><h6>©Integracion De Energia</h6></span></h2>
 						<br>
-						<div class="col"><a href="{{url('/services')}}" class="btn btn-secondary btn-lg">Servicios</a></div>
+						<div class="col"><a href="{{url('/services')}}" class="btn btn-secondary btn-lg boton1">Servicios</a></div>
 					</div>
 				</div>
 			</div>

@@ -2,7 +2,7 @@
     <div class="loader"></div>
 </div>
 <header class="encabezado">
-    <nav class="navbar navbar-expand-sm  fixed-top" style="background-color:#14283E" >
+    <nav class="navbar navbar-expand-sm  fixed-top" style="background-color:#19202C" >
         <button class="navbar-toggler navbar-toggler-right"  style="background-color:#00456b" type="button" data-toggle="collapse" data-target="#navbarToggler">
             <span class="navbar-toggler-icon" ></span>
         </button>
