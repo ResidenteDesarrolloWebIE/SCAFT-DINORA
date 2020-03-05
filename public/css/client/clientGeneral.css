@@ -1,6 +1,6 @@
 .section-projects {
-    background: white;
-    color: black;
+    background-image: url(../../images/fondo14.png);
+    color: white;
     /* background: #424141;
     color: #fff; */
 }
@@ -8,7 +8,7 @@
 .container-projects {
     padding-top: 100px;
     padding-bottom: 50px;
-    min-height: 553PX;
+    min-height: 608PX;
 }
 
 .center-content {
@@ -27,7 +27,7 @@
     margin-left: 40px;
 }
 .decription-color {
-    color: black;
+    color: white;
 }
 
 .details-projects {
@@ -39,8 +39,8 @@
 }
 
 .backgroud-icon {
-    background-color: #436999;
-    width: 30px;
+    background-color: #50545a;
+    width: 130px;
     height: 30px;
     border-width: .5px;
     border-style: solid;
@@ -53,11 +53,11 @@
 
 
 .t-stroke {
-    color: #000000;
+    color: #f3f1f1;
     -moz-text-stroke-width: 2px;
     -webkit-text-stroke-width: 2px;
-    -moz-text-stroke-color: #000000;
-    -webkit-text-stroke-color: #000000;
+    -moz-text-stroke-color: #ebe1e1;
+    -webkit-text-stroke-color: #f3e7e7;
     line-height: 170px;
 }
 
@@ -65,7 +65,7 @@
     border-radius: 50%;
     border-width: .5px;
     border-style: solid;
-    border-color: #000000;
+    border-color: #06b7ff;
 }
 
 .do-item {
@@ -84,14 +84,21 @@
 
 .do-info .do-info-back {
     transform: rotate3d(0, 1, 0, 180deg);
-    background-color: #9fd5d1;
-    opacity: 0.70;
+    background:linear-gradient(to left , rgb(27, 29, 29), rgb(4, 85, 114));
+    opacity: 1.70;
 }
 
 .do-item-circle-back {
     height: 251px;
-    opacity: 0.60;
+    opacity: 1.60;
     border-color: black;
+
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+    border: 1px solid #06b7ff;
+    box-shadow: 0 10px 30px #06b7ff;
+    
 }
 
 .do-info-wrap {
@@ -113,6 +120,7 @@
     height: 100%;
     transition: all 0.4s ease-in-out;
     transform-style: preserve-3d;
+    
 }
 
 .do-info>div {
@@ -137,18 +145,32 @@
 
 .do-info-back {
     text-align: center;
+    
 }
 
 .do-info-back>div {
-    color: black;
+    color: white;
     font-size: 12px;
 }
 
 .do-item:hover .do-info-wrap {
     box-shadow: 0 0 0 0 #000000, inset 0 0 3px rgba(255, 255, 255, 0.8);
     /* rgba(255, 255, 255, 0.8) */
+
 }
 
 .do-item:hover .do-info {
     transform: rotate3d(0, 1, 0, -180deg);
 }
+<<<<<<< HEAD
+=======
+
+.backgroud-icon {
+    background-color: #436999;
+    width: 30px;
+    height: 30px;
+    border-width: .5px;
+    border-style: solid;
+    border-color: #ffff;
+}
+>>>>>>> dbb637a46437bfaa23c3fff9786463f968805738
