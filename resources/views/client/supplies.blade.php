@@ -33,7 +33,7 @@
                                     <div class="buttons-projects">
                                         <button class="backgroud-icon" id="btnInfoSupply" data-toggle="modal" data-target="#moreInformation" onclick='moreInformation({{$supply->id}},this.id);'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Mas informacion!">
-                                                <i class="fas fa-user"></i>
+                                                <i class="fas fa-info"></i>
                                             </span>
                                         </button>
 

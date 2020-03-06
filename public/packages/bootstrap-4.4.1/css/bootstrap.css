@@ -5839,6 +5839,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 button.close {
+  color: azure;
   padding: 0;
   background-color: transparent;
   border: 0;
