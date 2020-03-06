@@ -21,8 +21,8 @@ class CreateServicesQuotationsTable extends Migration
             $table->text('service_location');
             $table->date('estimated_time');
             $table->string('status',20);
-            $table->text('notes');
-            $table->tinyInteger('bidding');
+            $table->text('notes')->nullable();
+            $table->tinyInteger('bidding')->default(0)->nullable();
             
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users');

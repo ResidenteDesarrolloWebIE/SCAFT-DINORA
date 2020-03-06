@@ -8,11 +8,6 @@
 .login-text-center{display: flex;align-items: center;justify-content: center;min-height: 96vh;}
 .login-image{margin-top:30px; display: block; margin-left: 3%; margin-right: auto; width:70%;height: 80px;-webkit-filter: saturate(1.5);filter: saturate(1.5); }
 .login-icon-color{background-color:#1966c4;}
-<<<<<<< HEAD
-.login-btn{border-color:#0000;font-weight: bold;background-color:#225B7C; color:white;
-    width:200px;border-radius:8px; height: 40px;}
-/* ******************************************************* */
-=======
 .login-btn{border-color:#0000;font-weight: bold;background-color:#3982ab; color:white;
     width:300px;border-radius:18px; height: 40px;}
 #card1{
@@ -31,4 +26,3 @@
         filter: saturate(1.5); 
     }
 }
->>>>>>> dbb637a46437bfaa23c3fff9786463f968805738

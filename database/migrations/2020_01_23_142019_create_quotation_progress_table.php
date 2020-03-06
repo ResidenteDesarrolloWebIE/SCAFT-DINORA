@@ -15,20 +15,20 @@ class CreateQuotationProgressTable extends Migration
     {
         Schema::create('quotation_progress', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->double('etapa1');
-            $table->double('etapa2');
-            $table->double('etapa3');
-            $table->date('date_etapa3');
-            $table->double('payment_one');
-            $table->double('etapa4');
-            $table->date('date_etapa4');
-            $table->double('etapa5');
-            $table->date('date_etapa5');
-            $table->double('etapa6');
-            $table->date('date_etapa6');
-            $table->double('payment_two');
-            $table->double('liquidez');
-            $table->date('final_date');
+            $table->double('etapa1')->nullable();
+            $table->double('etapa2')->nullable();
+            $table->double('etapa3')->nullable();
+            $table->date('date_etapa3')->nullable();
+            $table->double('payment_one')->nullable();
+            $table->double('etapa4')->nullable();
+            $table->date('date_etapa4')->nullable();
+            $table->double('etapa5')->nullable();
+            $table->date('date_etapa5')->nullable();
+            $table->double('etapa6')->nullable();
+            $table->date('date_etapa6')->nullable();
+            $table->double('payment_two')->nullable();
+            $table->double('liquidez')->nullable();
+            $table->date('final_date')->nullable();
             
             $table->unsignedBigInteger('service_quotation_id')->nullable();
             $table->foreign('service_quotation_id')->references('id')->on('services_quotations');

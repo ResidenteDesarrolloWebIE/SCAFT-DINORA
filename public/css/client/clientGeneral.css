@@ -162,8 +162,6 @@
 .do-item:hover .do-info {
     transform: rotate3d(0, 1, 0, -180deg);
 }
-<<<<<<< HEAD
-=======
 
 .backgroud-icon {
     background-color: #436999;
@@ -173,4 +171,3 @@
     border-style: solid;
     border-color: #ffff;
 }
->>>>>>> dbb637a46437bfaa23c3fff9786463f968805738

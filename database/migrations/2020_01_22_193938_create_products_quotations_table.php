@@ -19,7 +19,7 @@ class CreateProductsQuotationsTable extends Migration
             $table->text('description');
             $table->double('total_amount',15,6);
             $table->string('status');
-            $table->text('notes');
+            $table->text('notes')->nullable();
             $table->date('estimated_date');
             $table->boolean('bidding')->default(0)->nullable();
             
