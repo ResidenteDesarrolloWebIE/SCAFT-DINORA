@@ -24,10 +24,10 @@
     display: inline-block;
     line-height: 32px;
     border-radius: 32px;
-    margin-top: 7px;
-    margin-left: 3px;
+    margin-top: 10px;
+    margin-left: 1px;
     color: #b5b5ba;
-    font-size: 17px;
+    font-size: 12px;
 }
 .progress-content .circle .title {
     color: #b5b5ba;

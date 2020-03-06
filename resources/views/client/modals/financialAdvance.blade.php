@@ -1,12 +1,12 @@
 <div class="modal fade bd-example-modal-lg" id="financialAdvance">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header modal-header-info" >
+            <div class="modal-header" >
                 <h4 class="modal-title" id="idModalTitle"><span class="fa fa-spinner" aria-hidden="true"></span>&nbsp;&nbsp;<strong class="modal-folio">Folio: </strong> <strong  id='idFolioEconomic'></strong></h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="" data-dismiss="modal">&times;</button>
             </div>
             <div class="text-right modal-header-info">
-                <h4 class=""><strong>DETALLE ECOOMICO</strong></h4>
+                <h4 class=""><strong>DETALLE ECONOMICO</strong></h4>
             </div>
             <div class="modal-body container">
                     <div class="row text-center">

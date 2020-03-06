@@ -13,9 +13,9 @@
             </div>
             @endif
             @foreach ($supplies as $supply)
-            <div class="col-md-4 list-projects">
+            <div class="col-md-3 list-projects">
                 <div class="do-item do-item-circle do-circle item-projects">
-                    <img src="{{ asset('images/eng2.png') }}" class="do-item do-circle do-item-circle-back">
+                    <img src="{{ asset('images/7.png') }}" class="do-item do-circle do-item-circle-back">
                     <div class="do-info-wrap do-circle">
                         <div class="do-info">
                             <div class="do-info-front do-circle">
@@ -33,7 +33,7 @@
                                     <div class="buttons-projects">
                                         <button class="backgroud-icon" id="btnInfoSupply" data-toggle="modal" data-target="#moreInformation" onclick='moreInformation({{$supply->id}},this.id);'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Mas informacion!">
-                                                <i class="fas fa-user"></i>
+                                                <i class="fas fa-info"></i>
                                             </span>
                                         </button>
 

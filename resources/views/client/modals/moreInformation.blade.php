@@ -4,7 +4,7 @@
         <div class="modal-content text-center">
             <div class="modal-header" >
                 <h4 class="modal-title" id="modalTitle"><span class="fa fa-spinner" aria-hidden="true"></span>&nbsp;&nbsp;<strong class="modal-folio">Folio: </strong> <strong  id='idFolio'></strong></h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="" data-dismiss="modal">&times;</button>
             </div>
             <div class="text-right modal-header-info">
                 <h4 class=""><strong>MAS INFORMACIÓN</strong></h4>
