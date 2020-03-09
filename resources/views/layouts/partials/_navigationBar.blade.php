@@ -7,7 +7,7 @@
             <span class="navbar-toggler-icon" ></span>
         </button>
         <a href="{{url('/home')}}" class="site-logo text-center">
-            <img class="logo" src="{{ asset('images/scaft4.png') }}" alt="">
+            <img class="logo" src="{{ asset('images/scaft6.png') }}" alt="">
         </a>
         <div class="collapse navbar-collapse collapse offset-md-3" id="navbarToggler">
             <ul class="nav navbar-nav" id="menuprincipal">
