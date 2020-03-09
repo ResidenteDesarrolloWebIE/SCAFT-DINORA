@@ -17,7 +17,7 @@ class createQuotationpaymentsTable extends Migration
             $table->bigIncrements('id');
             $table->double('amount');
             $table->date('date_amount');
-            $table->tinyInteger('approval');
+            $table->tinyInteger('approval')->nullable();
             $table->double('exchange');
 
             $table->unsignedBigInteger('service_quotation_id')->nullable();

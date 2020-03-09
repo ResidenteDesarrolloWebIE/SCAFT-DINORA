@@ -16,7 +16,7 @@ class RevisionSupplySeeder extends Seeder
         $revision = new RevisionSupply();
         $revision->revision_number = 1;
         $revision->utility_percentage = 50;
-        $revision->exchage_rate = 1;
+        $revision->exchange_rate = 1;
         $revision->final_amount = 5000000;
         $revision->revision_date = '2020-02-24 14:36:28';
         $revision->notes = "Primera revision";
@@ -27,7 +27,7 @@ class RevisionSupplySeeder extends Seeder
         $revision = new RevisionSupply();
         $revision->revision_number = 1;
         $revision->utility_percentage = 50;
-        $revision->exchage_rate = 17.98;
+        $revision->exchange_rate = 17.98;
         $revision->final_amount = 5000000;
         $revision->revision_date = '2020-02-24 14:36:28';
         $revision->notes = "Primera revision";

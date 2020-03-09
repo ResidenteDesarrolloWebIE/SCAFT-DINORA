@@ -17,8 +17,8 @@ class CreateRevisionsSuppliesTable extends Migration
             $table->bigIncrements('id');            
             $table->integer('revision_number');
             $table->double('utility_percentage');
-            $table->double('exchage_rate')->nullable();
-            $table->double('final_amount');
+            $table->double('exchange_rate')->nullable();
+            $table->double('final_amount')->nullable();
             $table->timestamp('revision_date');
             $table->string('notes');
 

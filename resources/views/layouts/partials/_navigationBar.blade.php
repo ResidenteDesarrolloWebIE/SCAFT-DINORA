@@ -3,8 +3,8 @@
 </div>
 <header class="encabezado">
     <nav class="navbar navbar-expand-sm  fixed-top" style="background-color:#19202C" >
-        <button class="navbar-toggler navbar-toggler-right"  style="background-color:#00456b" type="button" data-toggle="collapse" data-target="#navbarToggler">
-            <span class="navbar-toggler-icon" ></span>
+        <button class="navbar-toggler navbar-toggler-right"  style="background-color:gray" type="button" data-toggle="collapse" data-target="#navbarToggler">
+            <i class="fas fa-bars" ></i>
         </button>
         <a href="{{url('/home')}}" class="site-logo text-center">
             <img class="logo" src="{{ asset('images/scaft6.png') }}" alt="">
