@@ -16,14 +16,14 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(CoinSeeder::class); 
 
-        /* $this->call(AdmDatabaseSyncSeeder::class);  
+        $this->call(AdmDatabaseSyncSeeder::class);  
         $this->call(ProductSeeder::class); 
         $this->call(ServiceSeeder::class); 
         $this->call(ProjectSeeder::class); 
         $this->call(PaymentSeeder::class); 
         $this->call(ProgressSeeder::class);
         $this->call(RevisionServiceSeeder::class);
-        $this->call(RevisionSupplySeeder::class); */
+        $this->call(RevisionSupplySeeder::class); 
 
         /*   DB::table('adm_database_syncs')->insert([
             'name' => 'Customer',
