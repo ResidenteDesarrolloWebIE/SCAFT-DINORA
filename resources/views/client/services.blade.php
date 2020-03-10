@@ -12,7 +12,7 @@
             </div>
             @endif
             @foreach ($services as $service)
-            <div class="col-md-3 list-projects" >
+            <div class="col-md-3 list-projects">
                 <div class="do-item do-item-circle do-circle">
                     <img src="{{ asset('images/8.png') }}" class="do-item do-circle do-item-circle-back">
                     <div class="do-info-wrap do-circle">

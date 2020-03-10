@@ -23,11 +23,11 @@
 }
 .list-projects{
     margin-top: 25px;
-    right: 10%;
+    right: 7%;
 }
-.item-projects{
+/* .item-projects{
     margin-left: 40px;
-}
+} */
 .decription-color {
     color: white;
 }
@@ -84,13 +84,11 @@
 }
 
 /* Imagen y color del fondo del frente del circulo */
-
 .do-info .do-info-back {
     transform: rotate3d(0, 1, 0, 180deg);
     background:linear-gradient(to left , rgb(27, 29, 29), rgb(4, 85, 114));
     opacity: 1.70;
 }
-
 .do-item-circle-back {
     height: 251px;
     opacity: 1.60;
@@ -135,7 +133,6 @@
 }
 
 /* Determina el ancho donde estara el texto d ela descripcion */
-
 .text-info {
     text-transform: uppercase;
     font-size: 14px;

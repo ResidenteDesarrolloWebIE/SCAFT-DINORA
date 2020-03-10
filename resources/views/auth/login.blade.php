@@ -23,7 +23,7 @@
 
                         <div class="card-header text-center" style="background-color:#DEDBDB">
                             <h4>{{ __('BIENVENIDO') }}</h4>
-                                <img class="login-image" src="{{ asset('images/scaft4.png')}}" class="card-img-top">
+                                <img class="login-image" src="{{ asset('images/scaft7.png')}}" class="card-img-top">
                         </div>
 
                         <div class="card-body" style="background-color:#DEDBDB">
