@@ -39,7 +39,7 @@
                             @endif
                         </td>
                         <td>
-                            <a data-toggle="modal" data-target="#loadImages" onclick='imagesProject( {{$project->id}}, "{{$project->name}}", "{{$project->folio}}" )'>
+                            <a data-toggle="modal" data-target="#loadImages" onclick='imagesProject( {{$project}})'>
                                 <!--  onclick="getDocuments('{{$project->folio}}')" -->
                                 <button type="button" class="btn btn-success" data-toggle="tooltip" title="Agregar imagenes" data-placement="bottom"><i class="fas fa-images"></i></button> <!-- data-toggle="tooltip" title="Agregar imagenes" -->
                             </a>

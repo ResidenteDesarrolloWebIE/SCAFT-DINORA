@@ -9,8 +9,7 @@ use Illuminate\Support\Facades\ File;
 class ProjectsController extends Controller
 {
     public function index(){
-        $projects = Project::all();
+        $projects = Project::with('product','service')->get();
         return view('admin.projectsList')->with('projects', $projects);
     }
-    
 }

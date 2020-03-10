@@ -47,7 +47,7 @@
                                             </span>
                                         </button>
 
-                                        <button class="backgroud-icon" id="btnGalleryService" data-toggle="modal" data-target="#imagesGallery" onclick='imagesGallery({{$service->id}},this.id,"{{$service->folio}}")'>
+                                        <button class="backgroud-icon" id="btnGalleryService" data-toggle="modal" data-target="#imagesGallery" onclick='imagesGallery(this.id,{{$service}} )'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Galeria!">
                                                 <i class="far fa-images"></i>
                                             </span>

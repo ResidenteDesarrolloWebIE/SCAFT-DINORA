@@ -15,7 +15,9 @@
                     <div class="col-md-12 text-center">
                         {!! Form::open(['url' => route('upload-post'), 'class' => 'dropzone', 'files'=>true, 'id'=>'real-dropzone']) !!}
                         <input type="hidden" name="idProject" id="idProject" value="" readonly="true">
-                        <input type="hidden" name="nameProject" id="nameProject" value="" readonly="true">
+                        <input type="hidden" name="folioProject" id="folioProject" value="" readonly="true">
+                        <input type="hidden" name="typeProject" id="typeProject" value="" readonly="true">
+                        <input type="hidden" name="folioOffer" id="folioOffer" value="" readonly="true">
                         <div class="dz-message"></div>
                         <div class="fallback">
                             <input name="file" type="file" multiple />

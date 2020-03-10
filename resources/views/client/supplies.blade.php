@@ -15,7 +15,7 @@
             @foreach ($supplies as $supply)
             <div class="col-md-3 list-projects">
                 <div class="do-item do-item-circle do-circle item-projects">
-                    <img src="{{ asset('images/7.png') }}" class="do-item do-circle do-item-circle-back">
+                    <img src="{{ asset('images/pproduct') }}" class="do-item do-circle do-item-circle-back">
                     <div class="do-info-wrap do-circle">
                         <div class="do-info">
                             <div class="do-info-front do-circle">
@@ -48,7 +48,7 @@
                                             </span>
                                         </button>
 
-                                        <button class="backgroud-icon" id="btnGallerySupply" data-toggle="modal" data-target="#imagesGallery" onclick='imagesGallery({{$supply->id}},this.id,"{{$supply->folio}}")'>
+                                        <button class="backgroud-icon" id="btnGallerySupply" data-toggle="modal" data-target="#imagesGallery" onclick='imagesGallery(this.id,{{$supply}} )'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Galeria!">
                                                 <i class="far fa-images"></i>
                                             </span>

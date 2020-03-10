@@ -6,10 +6,19 @@ $(document).ready(function() {
     });
 });
 
-function imagesProject(idProject, nameProject, folioProject) {
-    $('#idFolioProject').html(folioProject)
-    $('#idProject').val(idProject);
-    $('#nameProject').val(nameProject);
+function imagesProject(project) {
+    console.log(project);
+    $('#idFolioProject').html(project.folio)
+    $('#idProject').val(project.id);
+    $('#folioProject').val(project.folio);
+
+    if(project.product !=null){
+        $('#folioOffer').val(project.product.folio)
+        $('#typeProject').val("Suministro");
+    }else{
+        $('#folioOffer').val(project.service.folio)
+        $('#typeProject').val("Servicio");
+    }
     var objDZ = Dropzone.forElement("#real-dropzone");
     objDZ.emit("initFiles"); 
 }
@@ -45,14 +54,17 @@ Dropzone.options.realDropzone = {
                 });
             });
         });
-         
         this.on("removedfile", function(file) {
             console.log(file.name);
             console.log($('.serverfilename', file.previewElement).val())
+            var folioProject = $('#folioProject').val()
+            var typeProject = $('#typeProject').val()
+            var folioOffer = $('#folioOffer').val()
             $.ajax({
                 type: 'POST',
                 url: 'upload/delete',
-                data: { id: file.name, _token: $('#csrf-token').val() }, /* $('.serverfilename', file.previewElement).val() */
+                data: { id: file.name,folioOffer:folioOffer,folioproject:folioProject,typeProject:typeProject, _token: $('#csrf-token').val() },
+                 /* $('.serverfilename', file.previewElement).val() */
                 dataType: 'html',
                 success: function(data) {
                     console.log(data);
@@ -63,7 +75,6 @@ Dropzone.options.realDropzone = {
                     }
                 }
             });
-
         });
         this.on("resetFiles", function(file) {
             console.log(myDropzone.getAcceptedFiles());

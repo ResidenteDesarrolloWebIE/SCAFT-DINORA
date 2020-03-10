@@ -1,5 +1,5 @@
 <div class="modal fade" id="imagesGallery">
-    <div class="modal-dialog ">
+    <div class="modal-dialog modal-sm modal-lg">
         <div class="modal-content">
             <span type="hidden" name="_token" value="{{{ csrf_token() }}}" id="idTokenGallery"> </span>
 
@@ -13,11 +13,10 @@
             </div>
             <!-- Modal body -->
             <div class="modal-body">
-                <div class="fotorama" data-nav="thumbs" id="images">
+                <div class="row" id="images"> <!-- class="fotorama" data-nav="thumbs" -->
                     <!-- <a href="2.jpg"><img  src="images/logo1.png" width="120" height="96"></a> -->
                 </div>
             </div>
-
             <!-- Modal footer -->
             <div class="modal-footer " style="justify-content: center;">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal"> 

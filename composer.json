@@ -15,7 +15,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^1.1",
         "laraveles/spanish": "^1.4",
-        "nesbot/carbon": "^2.30",
+        "nesbot/carbon": "^2.31",
         "styde/html": "~1.0",
         "yajra/laravel-datatables-oracle": "^9.8"
     },
