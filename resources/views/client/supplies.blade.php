@@ -1,9 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
-@include('layouts.partials._navigationBar')
-
 <section class="section-projects py-2 text-xs-center">
+    @include('layouts.partials._navigationBar')
     <div class="container container-projects">
         <h2 class="text-center">SUMINISTROS SOLICITADOS</h2><br>
         <div class="row center-content">
