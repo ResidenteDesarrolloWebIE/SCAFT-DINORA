@@ -14,11 +14,11 @@
             @foreach ($supplies as $supply)
             <div class="col-md-3 list-projects">
                 <div class="do-item do-item-circle do-circle item-projects">
-                    <img src="{{ asset('images/pproduct') }}" class="do-item do-circle do-item-circle-back">
+                    <img src="{{ asset('images/7.png') }}" class="do-item do-circle do-item-circle-back">
                     <div class="do-info-wrap do-circle">
                         <div class="do-info">
                             <div class="do-info-front do-circle">
-                                <h1 class="t-stroke text-center">{{$supply->folio}}</h1>
+                                <h1 class="t-stroke text-center">{{$supply->project->folio}}</h1>
                             </div>
                             <div class="do-info-back do-circle text-center">
                                 <h3 class="text-info">

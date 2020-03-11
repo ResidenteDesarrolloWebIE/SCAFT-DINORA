@@ -11,8 +11,8 @@
             <div class="modal-body container">
                     <div class="row text-center" id="idFormulario">
                             <div class="form-group">
-                                <input type="hidden" name="_token" value="{{{ csrf_token() }}}" id="idTokenTechnical"/>
-                                <input type="hidden" name="idTechnical" id="idTechnical" value="" readonly="true">
+                                <input type="hidden" value="{{{ csrf_token() }}}" id="idTokenTechnical"/>
+                                <input type="hidden" name="idTechnical" id="idTechnical" value="" readonly="true"/>
                             </div> 
                             <div class="col-md-6">          
                                 <div class="form-group">

@@ -5,20 +5,24 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Quotes\Product;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Builder;
 
 class ProductController extends Controller{ 
-
+    
     public function showProducts(Request $request){
         if (Auth::check()) {
             $idUser = auth()->user()->id;
-            $supplies = Product::with(
-                'project.images','user.roles','revisions','contacts')
+            $supplies = Product::with('project.images','user.roles','revisions','contacts')
                 ->where('user_id',$idUser)
-                ->get(); /* ->toJson() */
-            $supplies = $supplies->whereNotNull('project');
+                ->whereHas('project', function (Builder $query) {
+                    $query->where('status', '=', 'ACTIVO');
+                })->get();
+                /* ->whereHas('project')
+                ->get(); */
+            /* $supplies = $supplies->whereNotNull('project'); */
             foreach($supplies as $supply){
-                if(strlen($supply->descripction) >55){
-                    $supply->descripction = substr($supply->descripction, 0, 55)."...";
+                if(strlen($supply->description) >55){
+                    $supply->description = substr($supply->description, 0, 55)."...";
                 }
             }
             return view('client.supplies')->with('supplies', $supplies);
@@ -40,7 +44,6 @@ class ProductController extends Controller{
             ->where('id', $id )->get();
         return $supply;
     }
-
 
     public function showTechnicalAdvance(Request $request){
         $id = $request->id;

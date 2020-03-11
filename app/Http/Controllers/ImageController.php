@@ -2,13 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Logic\Image\ImageRepository;
-use Intervention\Image\ImageManager;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Input;
 use App\Models\Projects\Image;
 use App\Models\Projects\Project;
-use App\Models\Quotes\Product;
-use App\Models\Quotes\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 

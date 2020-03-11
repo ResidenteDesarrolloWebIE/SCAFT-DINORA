@@ -9,7 +9,15 @@ use Illuminate\Support\Facades\ File;
 class ProjectsController extends Controller
 {
     public function index(){
-        $projects = Project::with('product','service')->get();
+        $projects = Project::with('product.user','service.user')->get();
+/*         dd($projects[0]); */
         return view('admin.projectsList')->with('projects', $projects);
+    }
+
+    public function changeStatus(Request $request){
+        $project = Project::where('id',$request->id)->first();
+        $project->status = $request->status;
+        $project->save();
+        return response()->json(["message"=>"Status actualizado correctamente"]);
     }
 }

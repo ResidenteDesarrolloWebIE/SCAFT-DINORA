@@ -4,50 +4,59 @@
 <section class="section-home">
 	@include('layouts.partials._navigationBar')
 	<div class="container-home">
-
-		<div class="testimotionals col-md-3 col-sm-5">
-			<div class="card">
-				<div class="layer">
-
-				</div>
-				<div class="content">
-					<p>
-						Tableros TPCYM, Servicio de pruebas en fábrica para TPCYM´S, Elaboración de ingeniería para TPCYM´S.</p>
-					<div class="image">
-						<img width="100px" src="{{ asset('images/1.png') }}" alt="">
-					</div>
-					<div class="details">
-						<h2>
-							<br>
-							<a href="{{url('/supplies')}}"> <span class="btn">SUMINISTROS</span></a>
-						</h2>
-
+		@if(Auth::user()->hasRole('client'))
+			<div class="testimotionals col-md-3 col-sm-5">
+				<div class="card">
+					<div class="layer"></div>
+					<div class="content">
+						<p>Tableros TPCYM, Servicio de pruebas en fábrica para TPCYM´S, Elaboración de ingeniería para TPCYM´S.</p>
+						<div class="image">
+							<img width="100px" src="{{ asset('images/1.png') }}" alt="">
+						</div>
+						<div class="details">
+							<h2><br>
+								<a href="{{url('/supplies')}}"> <span class="btn">SUMINISTROS</span></a>
+							</h2>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="testimotionals col-md-3 col-sm-5">
-			<div class="card">
-				<div class="layer">
-
-				</div>
-				<div class="content">
-					<p>
-						Servicio de integración al sistema existente, Actualización de esquemas, Instalación de redes de comunicación.</p>
-					<div class="image">
-						<img width="100px" src="{{ asset('images/4.png') }}" alt="">
-					</div>
-					<div class="details">
-						<h2>
-							<br>
-							<a href="{{url('/services')}}"> <span class="btn">SERVICIOS</span></a>
-						</h2>
-
+			<div class="testimotionals col-md-3 col-sm-5">
+				<div class="card">
+					<div class="layer"></div>
+					<div class="content">
+						<p>Servicio de integración al sistema existente, Actualización de esquemas, Instalación de redes de comunicación.</p>
+						<div class="image">
+							<img width="100px" src="{{ asset('images/4.png') }}" alt="">
+						</div>
+						<div class="details">
+							<h2>
+								<br><a href="{{url('/services')}}"> <span class="btn">SERVICIOS</span></a>
+							</h2>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		@else
+			<div class="testimotionals col-md-5 col-sm-5">
+				<div class="card">
+					<div class="layer"></div>
+					<div class="content">
+						<p>SERVICIOS: Servicio de integración al sistema existente, Actualización de esquemas, Instalación de redes de comunicación.</p>
+						<p>SUMINISTROS: Tableros TPCYM, Servicio de pruebas en fábrica para TPCYM´S, Elaboración de ingeniería para TPCYM´S.</p>
+						<div class="image">
+							<img width="100px" src="{{ asset('images/1.png') }}" alt="">
+						</div>
+						<div class="details">
+							<h2><br>
+								<a href="{{url('/projects')}}"> <span class="btn">Lista de proyectos</span></a>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		@endif
 	</div>
 </section>
 @endsection

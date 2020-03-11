@@ -11,7 +11,6 @@ use App\Models\Quotes\Payments;
 use App\User;
 use SoftDeletes;
 
-
 class Service extends Model
 {
     protected $table = 'services_quotations';
@@ -34,7 +33,6 @@ class Service extends Model
     public function orderedReviews(){
         return $this->hasMany(RevisionService::class,'service_quotation_id')->orderBy('revision','desc')->take(1);
     }
-
     /* Metodos para el progreso */
     public function progress(){
         return $this->hasOne(Progress::class,'service_quotation_id');
@@ -44,8 +42,4 @@ class Service extends Model
         return $this->hasMany(Payments::class,'service_quotation_id');
     }
 
-    /* */ 
-    public static function hasProjects(){
-        return Product::with('project.images','user.roles','revisions','contacts')->where('user_id',auth()->user()->id);
-    }
 }

@@ -7,7 +7,6 @@ use App\Models\Projects\Project;
 use App\Models\Revisions\RevisionSupply;
 use App\Models\UserDetails\Contact;
 use App\Models\Quotes\Progress;
-use App\Models\Quotes\Product;
 use App\Models\Quotes\Payments;
 
 class Product extends Model
@@ -33,21 +32,14 @@ class Product extends Model
         return $this->hasMany(RevisionSupply::class,'product_quotation_id');
     }
     public function orderedReviews(){
-        return $this->hasMany(RevisionSupply::class,'product_quotation_id')->orderBy('revision_number','desc')->take(1);
+        return $this->hasMany(RevisionSupply::class,'product_quotation_id')->orderBy('revision_number','desc');/* ->take(1) */
     }
-
         /* Metodos para el progreso */
     public function progress(){
         return $this->hasOne(Progress::class,'product_quotation_id');
     }
-
         /* Metodos para los pagos */
     public function payments(){
         return $this->hasMany(Payments::class,'product_quotation_id');
-    }
-
-    /* */ 
-    public static function hasProjects(){
-        return Product::with('project.images','user.roles','revisions','contacts')->where('user_id',auth()->user()->id);
     }
 }

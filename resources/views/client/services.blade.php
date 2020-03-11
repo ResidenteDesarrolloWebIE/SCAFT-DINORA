@@ -18,7 +18,7 @@
                     <div class="do-info-wrap do-circle">
                         <div class="do-info">
                             <div class="do-info-front do-circle">
-                                <h1 class="t-stroke text-center">{{$service->folio}}</h1>
+                                <h1 class="t-stroke text-center">{{$service->project->folio}}</h1>
                             </div>
                             <div class="do-info-back do-circle text-center">
                                 <h3 class="text-info">

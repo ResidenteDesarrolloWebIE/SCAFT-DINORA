@@ -40,20 +40,15 @@ class User extends Authenticatable
     public function contacts(){
         return $this->hasMany(Contact::class);
     }
-
     public function products_quotations(){
         return $this->hasMany(Products::class);
     }
-    
     public function services_quotations(){
         return $this->hasMany(Service::class);
     }
-    
     public function roles(){
         return $this->belongsToMany('App\Models\UserDetails\Role')->withTimestamps();
     }
-
-
 
 
     /* Metodos para manipular los roles */

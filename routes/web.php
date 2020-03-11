@@ -47,7 +47,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('supplies/technicalAdvance','Quotes\ProductController@showTechnicalAdvance');
     Route::get('supplies/imagesGallery', 'ImageController@showImagesGallery');
 
-
     Route::get('sincronizacion', 'Synchronization\AdmDatabaseSyncController@synchronizationWithAgate');
 });
 
@@ -58,5 +57,5 @@ Route::group(['middleware' => ['auth','admin']], function () {
     Route::post('upload', 'ImageController@postUpload')->name('upload-post');
     Route::post('upload/delete', 'ImageController@deleteUpload')->name('upload-remove');
     Route::get('server-images', 'ImageController@getServerImages')->name('server-images');
-
+    Route::post('project/changeStatus', 'ProjectsController@changeStatus')->name('project-changeStatus');
 });
