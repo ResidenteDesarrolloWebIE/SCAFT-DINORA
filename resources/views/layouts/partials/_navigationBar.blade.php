@@ -4,9 +4,8 @@
 <header class="encabezado">
     <nav class="navbar navbar-expand-sm  fixed-top" style="background-color:#19202C">
         <a href="{{url('/home')}}" class="site-logo text-center">
-            <img src="{{ asset('images/logob.png') }}" alt="">
+            <img class="logo" src="{{ asset('images/logo1.png') }}" alt="">
         </a>
-
         <button class="navbar-toggler navbar-toggler-right" style="background-color:gray" type="button" data-toggle="collapse" data-target="#navbarToggler">
             <i class="fas fa-bars"></i>
         </button>

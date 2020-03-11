@@ -32,24 +32,24 @@
                                     <div class="buttons-projects">
                                         <button class="backgroud-icon" id="btnInfoSupply" data-toggle="modal" data-target="#moreInformation" onclick='moreInformation({{$supply->id}},this.id);'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Mas informacion!">
-                                                <i class="fas fa-info"></i>
+                                                <i class="fas fa-info color" style="color:white;"></i>
                                             </span>
                                         </button>
 
                                         <button class="backgroud-icon" id="btnEconomicSupply" data-toggle="modal" data-target="#financialAdvance" onclick='financialAdvance({{$supply->id}},this.id);'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Avance Economico!">
-                                                <i class="fas fa-dollar-sign"></i>
+                                                <i class="fas fa-dollar-sign" style="color:white;"></i>
                                             </span>
                                         </button>
                                         <button class="backgroud-icon" data-toggle="modal" data-target="#technicalAdvanceSupply" onclick='technicalAdvanceSupply({{$supply->id}});'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Avance Tecnico!">
-                                                <i class="fas fa-wrench"></i>
+                                                <i class="fas fa-wrench" style="color:white;"></i>
                                             </span>
                                         </button>
 
                                         <button class="backgroud-icon" id="btnGallerySupply" data-toggle="modal" data-target="#imagesGallery" onclick='imagesGallery(this.id,{{$supply}} )'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Galeria!">
-                                                <i class="far fa-images"></i>
+                                                <i class="far fa-images" style="color:white;"></i>
                                             </span>
                                         </button>
                                     </div>

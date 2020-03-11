@@ -26,9 +26,9 @@
     margin-bottom: 6px;
 }
 
-.fixed-top {
+.fixed-top{
     background: rgba(0, 0, 0, 0.75);
-    opacity: 100%;
+    opacity: 95%;
 }
 
 .site-logo {
@@ -41,9 +41,18 @@
     -webkit-filter: saturate(3);
     filter: saturate(3);
 }
+.logo{
+    margin-left: 16%;
+    width:125px; 
+    height:45px;
+    position: relative; 
+    z-index: 1; 
+}
+
 
 .nav-item {
     margin-left: 40px;
+    position: relative;
 }
 
 .dropdown {
