@@ -2,13 +2,17 @@
     <div class="loader"></div>
 </div>
 <header class="encabezado">
-    <nav class="navbar navbar-expand-sm  fixed-top" style="background-color:#19202C" >
+    
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color:#19202C">
+
         <button class="navbar-toggler navbar-toggler-right"  style="background-color:gray" type="button" data-toggle="collapse" data-target="#navbarToggler">
             <i class="fas fa-bars" ></i>
         </button>
+
         <a href="{{url('/home')}}" class="site-logo text-center">
-            <img class="logo" src="{{ asset('images/logob.png') }}" alt="">
+            <img class="logo" src="{{ asset('images/logo1.png') }}" alt="">
         </a>
+        
         <div class="collapse navbar-collapse collapse offset-md-3" id="navbarToggler">
             <ul class="nav navbar-nav" id="menuprincipal">
                 @if(Auth::user()->hasRole('admin'))

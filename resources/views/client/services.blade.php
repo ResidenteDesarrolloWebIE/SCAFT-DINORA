@@ -32,24 +32,24 @@
                                     <div class="buttons-projects">
                                         <button class="backgroud-icon" id="btnInfoService" data-toggle="modal" data-target="#moreInformation" onclick='moreInformation({{$service->id}},this.id);'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Mas informacion!">
-                                                <i class="fas fa-info-circle"></i>
+                                                <i class="fas fa-info" style="color:white;"></i>
                                             </span>
                                         </button>
 
                                         <button class="backgroud-icon" id="btnEconomicService" data-toggle="modal" data-target="#financialAdvance" onclick='financialAdvance({{$service->id}},this.id);'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Avance Economico!">
-                                                <i class="fas fa-dollar-sign"></i>
+                                                <i class="fas fa-dollar-sign" style="color:white;"></i>
                                             </span>
                                         </button>
                                         <button class="backgroud-icon" data-toggle="modal" data-target="#technicalAdvanceService" onclick='technicalAdvanceService({{$service->id}});'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Avance Tecnico!">
-                                                <i class="fas fa-wrench"></i>
+                                                <i class="fas fa-wrench" style="color:white;"></i>
                                             </span>
                                         </button>
 
                                         <button class="backgroud-icon" id="btnGalleryService" data-toggle="modal" data-target="#imagesGallery" onclick='imagesGallery({{$service->id}},this.id,"{{$service->folio}}")'>
                                             <span data-toggle="tooltip" data-placement="bottom" title="Galeria!">
-                                                <i class="far fa-images"></i>
+                                                <i class="far fa-images" style="color:white;"></i>
                                             </span>
                                         </button>
                                     </div>

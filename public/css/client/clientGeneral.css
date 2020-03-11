@@ -47,13 +47,11 @@
     border-width: .5px;
     border-style: solid;
     border-color: #000000;
+    border-radius: 20px;
 }
 .backgroud-icon  .i{
     color:black;
 }
-
-
-
 .t-stroke {
     color: #f3f1f1;
     -moz-text-stroke-width: -4px;
@@ -164,7 +162,7 @@
 }
 
 .backgroud-icon {
-    background-color: #436999;
+    background-color: #0ca4ea;
     width: 30px;
     height: 30px;
     border-width: .5px;
