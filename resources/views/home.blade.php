@@ -11,7 +11,7 @@
 					<div class="content">
 						<p>Tableros TPCYM, Servicio de pruebas en fábrica para TPCYM´S, Elaboración de ingeniería para TPCYM´S.</p>
 						<div class="image">
-							<img width="100px" src="{{ asset('images/1.png') }}" alt="">
+							<img width="100px" src="{{ asset('images/supply-home.png') }}" alt="">
 						</div>
 						<div class="details">
 							<h2><br>
@@ -28,7 +28,7 @@
 					<div class="content">
 						<p>Servicio de integración al sistema existente, Actualización de esquemas, Instalación de redes de comunicación.</p>
 						<div class="image">
-							<img width="100px" src="{{ asset('images/4.png') }}" alt="">
+							<img width="100px" src="{{ asset('images/service-home.png') }}" alt="">
 						</div>
 						<div class="details">
 							<h2>
@@ -46,7 +46,7 @@
 						<p>SERVICIOS: Servicio de integración al sistema existente, Actualización de esquemas, Instalación de redes de comunicación.</p>
 						<p>SUMINISTROS: Tableros TPCYM, Servicio de pruebas en fábrica para TPCYM´S, Elaboración de ingeniería para TPCYM´S.</p>
 						<div class="image">
-							<img width="100px" src="{{ asset('images/1.png') }}" alt="">
+							<img width="100px" src="{{ asset('images/supply-home.png') }}" alt="">
 						</div>
 						<div class="details">
 							<h2><br>

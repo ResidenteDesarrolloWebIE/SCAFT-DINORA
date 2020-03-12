@@ -10,7 +10,6 @@ class ProjectsController extends Controller
 {
     public function index(){
         $projects = Project::with('product.user','service.user')->get();
-/*         dd($projects[0]); */
         return view('admin.projectsList')->with('projects', $projects);
     }
 

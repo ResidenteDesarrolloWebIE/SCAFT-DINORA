@@ -1,5 +1,5 @@
 <div class="modal fade" id="imagesGallery">
-    <div class="modal-dialog modal-sm modal-lg">
+    <div class="modal-dialog modal-sm modal-lg modal-dialog-scrollable">
         <div class="modal-content">
             <span type="hidden" name="_token" value="{{{ csrf_token() }}}" id="idTokenGallery"> </span>
 

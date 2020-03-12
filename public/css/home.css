@@ -1,5 +1,5 @@
 .section-home {
-  background: url("../images/fondo1.jpg");
+  background: url("../images/background-home.jpg");
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -23,16 +23,9 @@
     font-size: 16px;
   }
   .section-home {
-    background: url("../images/fondo1.jpg");
-    /* url("../../../images/fondo4.jpg") */
+    background: url("../images/background-home.jpg");
     background-size: 1300px;
   }
-/*   .testimotionals {
-    width: 350px;
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 50px
-  } */
 }
 
  
@@ -40,13 +33,10 @@
 .testimotionals .card {
   position: relative;
   overflow: hidden;
-  /* width: 350px; */
   margin: 0 auto;
   background: #6c6d6d;
   opacity: 90%;
-  /* background-image: url(); */
   background-repeat: no-repeat;
-  /* padding: 50px; */
   padding: 50px 0px 50px 0px;
   box-sizing: border-box;
   text-align: center;

@@ -13,14 +13,12 @@
 
     <link rel="stylesheet" href="{{asset('css/admin/projectList.css') }}"/>
     <link rel="stylesheet" href="{{asset('css/admin/modals/loadImages.css') }}"/>
-    <link rel="stylesheet" href="{{asset('css/client/modals/moreInformation.css') }}"/>
     <link rel="stylesheet" href="{{asset('css/client/clientGeneral.css') }}"/>
     <link rel="stylesheet" href="{{asset('css/client/modals/technicalAdvance.css') }}"/>
-    <link rel="stylesheet" href="{{asset('packages/dropzone/dropzone.css') }}">
+    <link rel="stylesheet" href="{{asset('plugins/dropzone-2012/dropzone.css') }}">
 
-    <link rel="stylesheet" href="{{asset('packages/bootstrap-4.4.1/css/bootstrap.min.css') }}">  
-    <link rel="stylesheet" href="{{asset('packages/datatables-1.10.7/jquery.dataTables.min.css') }}">
-    <link rel="stylesheet" href="{{asset('packages/fontawesome-5.12.1/css/solid.css')}}">    
-    <link rel="stylesheet" href="{{asset('packages/fotoroma-4.6.4/fotorama.css') }}">
-
+    <link rel="stylesheet" href="{{asset('plugins/bootstrap-4.4.1/css/bootstrap.min.css') }}">  
+    <link rel="stylesheet" href="{{asset('plugins/dataTables-1.10.20/css/jquery.dataTables.min.css') }}">
+    <link rel="stylesheet" href="{{asset('plugins/fontawesome-5.12.1/css/solid.css')}}">    
+    <link rel="stylesheet" href="{{asset('plugins/fotoroma-4.6.4/fotorama.css') }}">
 </head>

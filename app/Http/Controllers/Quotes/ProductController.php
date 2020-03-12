@@ -17,9 +17,6 @@ class ProductController extends Controller{
                 ->whereHas('project', function (Builder $query) {
                     $query->where('status', '=', 'ACTIVO');
                 })->get();
-                /* ->whereHas('project')
-                ->get(); */
-            /* $supplies = $supplies->whereNotNull('project'); */
             foreach($supplies as $supply){
                 if(strlen($supply->description) >55){
                     $supply->description = substr($supply->description, 0, 55)."...";

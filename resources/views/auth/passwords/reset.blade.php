@@ -8,12 +8,12 @@
         <title>{{ config('app.name', 'SCATF') }}</title>
         <link href="{{asset('images/icon.ico')}}" rel="shortcut icon"/>
 
-        <link rel="stylesheet" href="{{asset('packages/fontawesome-5.0.7/fontawesome.css') }}">
+        <link rel="stylesheet" href="{{asset('plugins/fontawesome-5.12.1/css/fontawesome.css') }}">
         <link href="{{asset('css/auth/login.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="{{asset('packages/bootstrap-4.4.1/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{asset('plugins/bootstrap-4.4.1/css/bootstrap.min.css') }}">
 
-        <script src="{{ asset('packages/fontawesome-5.0.7/fontawesome.js') }}" ></script>
-        <script src="{{ asset('packages/jquery-3.4.1/jquery.min.js')}}" ></script>
+        <script src="{{ asset('plugins/fontawesome-5.12.1/fontawesome.js') }}" ></script>
+        <script src="{{ asset('plugins/jquery-3.4.1/jquery.min.js')}}" ></script>
         <script src="{{ asset('js/auth/login.js') }}" ></script>
     </head>
     <body class="login-background">

@@ -14,7 +14,7 @@
             @foreach ($supplies as $supply)
             <div class="col-md-3 list-projects">
                 <div class="do-item do-item-circle do-circle item-projects">
-                    <img src="{{ asset('images/7.png') }}" class="do-item do-circle do-item-circle-back">
+                    <img src="{{ asset('images/supply-supplies.png') }}" class="do-item do-circle do-item-circle-back">
                     <div class="do-info-wrap do-circle">
                         <div class="do-info">
                             <div class="do-info-front do-circle">

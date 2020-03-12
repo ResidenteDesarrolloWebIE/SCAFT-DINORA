@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 .progress-content .circle {
-    /*background: #eee;*/
+    
     color: white;
     background-color: gray;
 }
@@ -50,9 +50,8 @@
     color: white;
     background-color: white;
 }
-/* Done / Active */
+
 .progress-content .bar.done, .progress-content .circle.done {
-    /*background: #eee;*/
     background: #337ab7;
 }
 .icon{
@@ -156,7 +155,6 @@
         cursor: pointer;
     }
     .progress-content .circle {
-        /*background: #eee;*/
         color: white;
         background-color: gray;
     }
@@ -164,15 +162,12 @@
         color: white;
         background-color: white;
     }
-    /* Done / Active */
     .progress-content .bar.done, .progress-content .circle.done {
-        /*background: #eee;*/
         background: #337ab7;
     }
     .icon{
         color:white;
     }
-    
     .progress-content .circle.done .label-icon {
         color: #FFF;
         background: #337ab7;

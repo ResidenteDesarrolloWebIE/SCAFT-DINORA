@@ -1,7 +1,7 @@
 /* Inicio de sesion */
 .login-background{
 	/* background-image: url('/../../images/fondo15.png'); */ 
-    background-image: url("../../images/scaft5.png");background-position: center;background-repeat: no-repeat;
+    background-image: url("../../images/background-login.png");background-position: center;background-repeat: no-repeat;
     background-attachment: fixed;background-size: cover;background-color: "#66999";
     background-size: cover;background-color: black;filter: contrast(85%);opacity: 0.95;}
 .login-icon-backgroud{background-color:#225B7C}

@@ -1,13 +1,14 @@
 <?php
 namespace App\Models\Quotes;
-use App\User;
-use SoftDeletes;
+
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Projects\Project;
 use App\Models\Revisions\RevisionSupply;
 use App\Models\UserDetails\Contact;
+use App\Models\Projects\Project;
 use App\Models\Quotes\Progress;
 use App\Models\Quotes\Payments;
+use SoftDeletes;
+use App\User;
 
 class Product extends Model
 {
