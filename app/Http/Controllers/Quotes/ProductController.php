@@ -49,4 +49,16 @@ class ProductController extends Controller{
             ->where('id', $id )->get();
         return $supply;
     }
+
+
+
+
+    /* Nuevos metodos por nuevos requerimientos */
+
+    public function create(){
+        $myobj = Product::pluck('name','id');
+        return \View::make('QuotationProduct.quotationproducts_new')
+            ->with('mycust',$myobj)
+            ->with('nextFolio', $this->nextfolio());
+    }
 }

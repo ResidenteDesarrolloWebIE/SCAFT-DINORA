@@ -1,9 +1,12 @@
 <!doctype html>
     <head>
         <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Pragma" content="no-cache" />
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta http-equiv="Expires" content="0" />
+        <meta charset="utf-8">
+        
         <title>{{ config('app.name', 'SCATF') }}</title>
         <link href="images/icon.ico" rel="shortcut icon"/>
 
@@ -15,7 +18,8 @@
         <script src="{{ asset('plugins/jquery-3.4.1/jquery.min.js')}}" ></script>
         <script src="{{ asset('js/auth/login.js') }}" ></script>
     </head>
-    <body class="login-background">
+
+    <body class="login-background" onload="nobackbutton()" onpageshow="if (event.persisted) nobackbutton();">
         <div class="container">
             <div class="row login-text-center">
                 <div class="col-xs-8 col-sm-6 col-md-5">
@@ -102,5 +106,4 @@
             </div>
         </div>
     </body>
-    <!--  -->
 </html>

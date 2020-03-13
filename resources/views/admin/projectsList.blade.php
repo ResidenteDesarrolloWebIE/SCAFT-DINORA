@@ -4,17 +4,17 @@
 @section('content')
 <section class="section-projects-admin py-2 text-xs-center">
     @include('layouts.partials._navigationBar')
-    <div class="container container-projects-admin">
+    <!--     <div class="container container-projects-admin">
         <div class="row table-responsive text-center projects-table">
             <h1 class="text-center">Lista de Proyectos</h1>
             <table class="table text-center table-sm-responsive" id="tableProjects">
-                <thead style="background-color:gray"> <!-- class="thead-dark"> -->
+                <thead style="background-color:gray">
                     <tr>
                         <th> Id</th>
                         <th> Folio</th>
                         <th> Nombre</th>
                         <th> Status</th>
-                        <th>Nombre</th>  <!-- colspan="2" -->
+                        <th>Nombre</th> 
                         <th>Codigo</th>
                         <th>
                             Tipo
@@ -31,8 +31,7 @@
                         <td>{{$project->folio}}</td>
                         <td>{{$project->name}}</td>
                         <td>{{$project->status}}</td>
-                        @if(is_null($project->service)) <!-- Es suministro -->
-                            <td>{{$project->product->user->name}}</td>
+                        @if(is_null($project->service))
                             <td>{{$project->product->user->code}}</td>
                         @else
                             <td>{{$project->service->user->name}}</td>
@@ -50,8 +49,7 @@
                         </td>
                         <td>
                             <a data-toggle="modal" data-target="#loadImages" onclick='imagesProject( {{$project}})'>
-                                <!--  onclick="getDocuments('{{$project->folio}}')" -->
-                                <button type="button" class="btn btn-success" data-toggle="tooltip" title="Agregar imagenes" data-placement="bottom"><i class="fas fa-images"></i></button> <!-- data-toggle="tooltip" title="Agregar imagenes" -->
+                                <button type="button" class="btn btn-success" data-toggle="tooltip" title="Agregar imagenes" data-placement="bottom"><i class="fas fa-images"></i></button>
                             </a>
                             <a data-toggle="modal" data-target="#changeStatus" onclick='statusProject( {{$project}})'>
                                 <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Cambiar status" data-placement="bottom">
@@ -66,8 +64,23 @@
                 </tbody>
             </table>
         </div>
-    </div>
+    </div> -->
     @include('admin/modals/loadImages')
     @include('admin/modals/changeStatus')
+
+    <div class="container container-projects-admin">
+        <a data-toggle="modal" data-target="#createQuoteProduct">
+            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nueva cotizacion" data-placement="bottom">
+                <i class="fas fa-exchange-alt"></i>
+            </button>
+        </a>
+        <a data-toggle="modal" data-target="#createCustomer">
+            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nueva cotizacion" data-placement="bottom">
+                <i class="fas fa-exchange-alt"></i>
+            </button>
+        </a>
+    </div>
+    @include('client/quotes/products/create')
+    @include('client/customers/create')
 </section>
 @endsection

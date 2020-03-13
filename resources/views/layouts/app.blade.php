@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
     @include('layouts.partials._header')
-    <body>
+    <body onload="window.history.forward();">
         @yield('content')
     </body>
     @include('layouts.partials._footer')

@@ -12,7 +12,6 @@ use App\User;
 
 class Product extends Model
 {
-
     protected $dates = ['deleted_at'];
     protected $table = 'products_quotations';
     public function user(){
