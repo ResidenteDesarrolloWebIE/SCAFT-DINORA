@@ -23,6 +23,8 @@ class CreateProductsQuotationsTable extends Migration
             $table->date('estimated_date');
             $table->boolean('bidding')->default(0)->nullable();
     
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('contact_id')->nullable();
             $table->foreign('contact_id')->references('id')->on('contacts');
 

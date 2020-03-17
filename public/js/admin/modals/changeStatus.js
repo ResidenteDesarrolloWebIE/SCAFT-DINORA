@@ -1,4 +1,3 @@
-
 function statusProject(project) {
     $('#folio').html(project.folio);
     $('#status').val(project.status);
@@ -16,10 +15,10 @@ function changeStatus() {
         dataType: 'JSON',
         type: 'POST',
         data: { id: project, status: status },
-        success: function (data) {
+        success: function(data) {
             console.log(data)
             $('#changeStatus').hide();
-            $('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
+            $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
             $('.modal-backdrop').remove();
             Swal.fire({
                 type: 'success',
@@ -30,7 +29,7 @@ function changeStatus() {
                 },
             })
         },
-        error: function (data) {
+        error: function(data) {
             Swal.fire({
                 type: 'error',
                 title: 'Ops..',

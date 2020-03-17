@@ -8,7 +8,7 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 */
-
+Route::get('/', 'Auth\LoginController@showLoginForm');
 Auth::routes();
 
 /* Rutas para la pagina principal*/
@@ -28,6 +28,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('supplies/financialAdvance','Quotes\ProductController@showFinancialAdvance');
     Route::get('supplies/technicalAdvance','Quotes\ProductController@showTechnicalAdvance');
     Route::get('supplies/imagesGallery', 'ImageController@showImagesGallery');
+
+
+    
+    Route::post('project/create', 'Quotes\ProductController@create');
 });
 
 Route::group(['middleware' => ['auth','admin']], function () { 
