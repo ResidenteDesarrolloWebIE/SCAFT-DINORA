@@ -14,6 +14,14 @@ class Product extends Model
 {
     protected $dates = ['deleted_at'];
     protected $table = 'products_quotations';
+
+    public static $rules = [
+        'noteQuoteProduct' => 'required'
+    ];
+    public static $messages = [
+        'noteQuoteProduct.required' => 'noteQuoteProduct: Es requerido la nota'
+    ];
+
     public function user(){
         return $this->belongsTo(User::class);
     }
@@ -25,7 +33,6 @@ class Product extends Model
     public function contacts(){
         return $this->hasMany(Contact::class,'id');
     }
-
 
         /* Metodos para las revisiones */
     public function revisions(){

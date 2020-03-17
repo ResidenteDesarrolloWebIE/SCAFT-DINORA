@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Models\Quotes\Product;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Response;
+use App\Http\Requests\Quotes\SupplyRequest;
 
 class ProductController extends Controller{ 
     
@@ -55,10 +58,13 @@ class ProductController extends Controller{
 
     /* Nuevos metodos por nuevos requerimientos */
 
-    public function create(){
-        $myobj = Product::pluck('name','id');
-        return \View::make('QuotationProduct.quotationproducts_new')
-            ->with('mycust',$myobj)
-            ->with('nextFolio', $this->nextfolio());
+    public function create(SupplyRequest $request){
+        dd($request->all());
+        /* dd($request->all());
+        $validator = Validator::make($request->all(), Product::$rules, Product::$messages);
+        if ($validator->fails()) {
+            return Response::json(['error' => true,'message' => $validator->getMessageBag()->toArray(),'code' => 400], 400);
+        }  */ 
+        return Response::json(['error' => true,'message' => "Correcto",'code' => 200], 200);
     }
 }

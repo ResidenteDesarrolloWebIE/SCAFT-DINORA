@@ -69,18 +69,35 @@
     @include('admin/modals/changeStatus')
 
     <div class="container container-projects-admin">
+        @if(session('alert'))
+        <div class="alert alert-success">
+            {{session('alert')}}
+        </div>
+        @endif
         <a data-toggle="modal" data-target="#createQuoteProduct">
-            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nueva cotizacion" data-placement="bottom">
-                <i class="fas fa-exchange-alt"></i>
+            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nueva cotizacion Suministro" data-placement="bottom">
+                Suministro<i class="fas fa-exchange-alt"></i>
+            </button>
+        </a>
+        <a data-toggle="modal" data-target="#createQuoteService">
+            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nueva cotizacion Servicio" data-placement="bottom">
+                Servicio<i class="fas fa-exchange-alt"></i>
+            </button>
+        </a>
+        <a data-toggle="modal" data-target="#createContact">
+            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nuevo contacto" data-placement="bottom">
+                Contacto<i class="fas fa-exchange-alt"></i>
             </button>
         </a>
         <a data-toggle="modal" data-target="#createCustomer">
-            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nueva cotizacion" data-placement="bottom">
-                <i class="fas fa-exchange-alt"></i>
+            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nuevo cliente" data-placement="bottom">
+                Cliente<i class="fas fa-exchange-alt"></i>
             </button>
         </a>
     </div>
-    @include('client/quotes/products/create')
+    @include('client/quotes/supplies/create')
+    @include('client/quotes/services/create')
+    @include('client/contacts/create')
     @include('client/customers/create')
 </section>
 @endsection
