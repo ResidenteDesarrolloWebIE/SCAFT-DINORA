@@ -58,13 +58,83 @@ class ProductController extends Controller{
 
     /* Nuevos metodos por nuevos requerimientos */
 
-    public function create(SupplyRequest $request){
-        dd($request->all());
-        /* dd($request->all());
-        $validator = Validator::make($request->all(), Product::$rules, Product::$messages);
-        if ($validator->fails()) {
-            return Response::json(['error' => true,'message' => $validator->getMessageBag()->toArray(),'code' => 400], 400);
-        }  */ 
-        return Response::json(['error' => true,'message' => "Correcto",'code' => 200], 200);
+    public function create(Request $request){
+        /* dd($request->all()); */
+        return Response::json(['error' => false,'message' => "Cotizacion creada correctamente",'code' => 200], 200);
     }
+    /* 
+        $mypq = new product_quotation();
+        $mypq->folio = $this->nextfolio();
+        $mypq->description = Input::get('quotation_description');
+        $mypq->total_amount = 0.0;
+        $mypq->status = "Registrada";
+        $mypq->user_id =  Auth::user()->id;
+        $mypq->approved_revision_id = 1;
+        $mypq->customer_id = Input::get('quotation_customer');
+        $mypq->contact_id = Input::get('slt_quotation_contact');
+        $mypq->notes = Input::get('quotation_notes');
+        $mypq->estimated_date = Input::get('quotation_estimateddate');
+        if(Input::get('quotation_bidding') == "on"){
+            $mypq->bidding = "1";
+        } else {
+            $mypq->bidding = "0";
+        }
+        
+        $myrevq = new revision_quotation();        
+        $myrevq->revision_date = now();
+        $myrevq->notes = "";
+        $myrevq->user_id = Auth::user()->id;
+        $myrevq->revision_number = 1;
+
+        //NUEVO
+        $myProductQP = new quotation_progress();
+        $myProductQP->product_quotation_id = $mypq->id;
+        $myProductQP->service_quotation_id = 0;
+        $myProductQP->etapa1 = 10;
+        $myProductQP->etapa2 = 0;
+        $myProductQP->etapa3 = 0;
+        $myProductQP->etapa4 = 0;
+        $myProductQP->etapa5 = 0;
+        $myProductQP->etapa6 = 0;
+        
+        if(Input::hasFile('file')){ 
+        	$count=0;
+        	for($i=0; $i<count(Input::file('file')); $i++){
+        		$hour = str_replace(":", "", date ("h:i:s"));
+        		$Path = "documents_storage/productquotation/".$mypq->folio."/";
+        		$Path2 = "documents_storage/productquotation/".$mypq->folio."/".$hour."_".substr(Input::file('file')[$i]->getClientOriginalName(), 0, -(strlen(Input::file('file')[$i]->getClientOriginalExtension()) + 1)).".".Input::file('file')[$i]->getClientOriginalExtension();
+        		$createFile = $this->saveFile( Input::file('file')[$i], $Path, $Path2, $mypq->folio, $hour);
+        	
+        		if($createFile==true){
+        			$count++;
+        		}
+        	}
+        	if($count==count(Input::file('file'))){
+        		$createFile=true;
+        	}
+        	
+        	if($createFile==true){
+        		$mypq->save();
+        		$myrevq->product_quotation_id = $mypq->id;
+        		$myrevq->save();
+
+                //NUEVO
+                $myProductQP->product_quotation_id = $mypq->id;
+                $myProductQP->save();
+        	}
+        }
+        else{
+        	$createFile=true;
+        	$mypq->save();               
+        	$myrevq->product_quotation_id = $mypq->id;
+        	$myrevq->save();
+
+            $myProductQP->product_quotation_id = $mypq->id;
+            $myProductQP->save();
+        }
+        	
+        if($createFile==true){
+        	return Redirect('quotationproductsview');
+        }
+    */
 }

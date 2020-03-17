@@ -23,7 +23,7 @@ class SupplyRequest extends FormRequest
      */
     public function rules(){
         return [
-            'noteQuoteProduct' => 'required',
+            'fileQuotesProduct' => 'required|mimes:png,gif,jpeg,jpg,bmp',
         ];
     }
 
@@ -35,7 +35,7 @@ class SupplyRequest extends FormRequest
     public function attributes()
     {
         return [
-            'noteQuoteProduct' => 'nombre del producto',
+            'fileQuotesProduct' => 'archivo',
         ];
     }
 }

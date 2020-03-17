@@ -9,9 +9,11 @@
 <script src="{{asset('plugins/dataTables-1.10.20/js/jquery.dataTables.min.js') }}" ></script>
 <script src="{{asset('plugins/sweetalert-2/sweetalert2.all.min.js') }}"></script>
 <script src="{{ asset('js/general.js') }}"></script>
+
 <script src="{{ asset('js/admin/modals/changeStatus.js') }}"></script>
 <script src="{{ asset('js/admin/modals/loadImages.js') }}"></script>
 <script src="{{ asset('js/admin/projectsList.js') }}"></script>
+<script src="{{ asset('js/admin/quotes/supplies/create.js') }}"></script>
 
 <script src="{{ asset('js/client/modals/financialAdvance.js') }}"></script>
 <script src="{{ asset('js/client/modals/imageGallery.js') }}"></script>
