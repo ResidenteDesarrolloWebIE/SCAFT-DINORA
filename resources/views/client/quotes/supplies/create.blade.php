@@ -13,8 +13,8 @@
                 <strong>Recomendaciones: </strong> <br>&nbsp;&nbsp;Debes evitar espacios al inicio y al final de cada texto ingresado.
             </div>
             <div class="modal-body">
-                {{Form::open(['id'=>'formulario','files'=>true, 'class'=>'row','onsubmit'=>'save(this); return false;'])}} <!-- 'url'=>'project/create',  -->
-                @method('POST')
+                {{Form::open(['method'=>'POST','id'=>'formulario','enctype'=>'multipart/form-data', 'class'=>'row','onsubmit'=>'save(this); return false;'])}} <!-- 'url'=>'project/create',  -->
+                <!-- <form enctype="multipart/form-data" class="row" onsubmit="save(this); return false;"> -->
                 <input type="hidden" name="token" value="{{{ csrf_token() }}}" id="token" readonly="true" />
                 <div class="col-md-6">
                     <div class="form-group text-center">
@@ -22,10 +22,8 @@
                         <select class="custom-select" id="clientQuoteProduct" name="clientQuoteProduct" required>
                             <option value="-1" selected>Selecciona un cliente</option>
                             @foreach($clients as $client)
-                            <option value="{{$client->name}}">{{$client->name}}</option>
+                            <option value="{{$client->id}}">{{$client->name}}</option>
                             @endforeach
-                            <!-- <option value="2">Cliente2</option>
-                            <option value="3">Cliente3</option> -->
                         </select>
                     </div>
                     <div class="form-group text-center">
@@ -33,10 +31,8 @@
                         <select class="custom-select" id="contactQuoteProduct" name="contactQuoteProduct" required disabled>
                             <option value="-1" id="optionContactQuoteProduct" selected> Debes de seleccionar un cliente</option>
                             @foreach($contacts as $contact)
-                            <option value="{{$contact->name}}">{{$contact->name}}</option>
+                            <option value="{{$contact->id}}">{{$contact->name}}</option>
                             @endforeach
-                            <!-- <option value="2">Contacto2</option>
-                            <option value="3">Contacto3</option> -->
                         </select>
                     </div>
                     <div class="form-group text-center">
@@ -44,15 +40,15 @@
                         <input type="date" class="form-control" name="dateQuoteProduct" id="dateQuoteProduct" value="" required>
                     </div>
 
-                    <div class="custom-file">
-                        <!-- <input type="file" class="form-control-file" id="fileQuotesProduct" name="fileQuotesProduct" multiple> -->
-                        <!-- File input field -->
-
+                    <!-- <div class="custom-file">
                         <input type="file" id="fileQuotesProduct" name="fileQuotesProduct" multiple onchange="validationExtension()" />
                         <span id="errorFileQuotesProduct" style="color:red"></span>
-                        <!-- Image preview -->
-                        <!-- <div id="imagePreview"></div> -->
-                    </div>
+                    </div> -->
+                    <!-- <div class="">
+                         <input type="file" name="file[]"  class="file" id="file" multiple> 
+                        <input id="input-b3" name="input-b3[]" type="file" class="file" multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="Select {files} for upload...">
+                    </div> -->
+
                 </div>
                 <div class="col-md-6">
                     <div class="form-group text-center">
@@ -67,6 +63,13 @@
                         <input type="checkbox" class="custom-control-input" id="biddingQuoteProduct" name="biddingQuoteProduct">
                         <label class="custom-control-label" for="biddingQuoteProduct">Licitacion</label>
                     </div>
+                </div>
+                <div class="col-md-12">
+                    <!-- <input type="file" class="file" id="file" name="file[]" multiple> -->
+                    <!-- <div class="file-loading">
+                        <input id="input-44" name="input44[]" type="file" multiple>
+                    </div> -->
+                    <input id="file" name="file" type="file" multiple required>
                 </div>
             </div>
             <div class="modal-footer " style="justify-content: center;">

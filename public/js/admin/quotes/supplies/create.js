@@ -1,21 +1,38 @@
 $(document).ready(function () {
+    $("#file").fileinput({
+        language: 'es',
+        showRemove: true,
+        dropZoneEnabled : false , 
+        maxFileCount : 10 , 
+        mainClass : "input-group-lg" ,
+        showZoom: true,
+        showUpload: false,
+        showCaption: true,
+        showPreview: true,
+        showCancel: false,
+        initialPreviewShowDelete:true,
+        /* allowedFileExtensions: ['pdf', 'PDF', 'CSV', 'XLS', 'XLSX', 'XLSM', 'csv', 'xls', 'xlsx', 'xlsm', 'pps', 'ppsx', 'ppt', 'pptx', 'PPS', 'PPSX', 'PPT', 'PPTX', 'doc', 'docx', 'DOC', 'DOCX', 'xml', 'xmls', 'XML', 'XMLS', 'JPG', 'jpg', 'JPEG', 'jpeg', 'PNG', 'png', 'rar', 'RAR', 'zip', 'ZIP'], */
+        allowedFileExtensions: ['pdf','PDF','CSV','csv','TXT','txt'],
+        elErrorContainer: '#errorBlock',
+        browseClass: "btn btn-success btn-sm btn-file-sm",
+        browseLabel: "Buscar",
+        cancelLabel:"Cancelar",
+        removeClass: "btn btn-danger btn-sm",
+        removeLabel: "Eliminar",
+        layoutTemplates: {progress: ''},
+        showDownload:true,
+        fileActionSettings: {
+            showZoom: true,
+        },
+    });
+
     $("#createQuoteProduct").on('hidden.bs.modal', function () {
         location.reload();
     });
-    $('#quotation_customer').change(function () {
-        $.get("{{ url('contactsbycustomer')}}", { option: $(this).val() }, function (data) {
-            $('#slt_quotation_contact').empty();
-            $('#slt_quotation_contact').append("<option value>Selecciona un contacto</option>");
-            $.each(data, function (key, element) {
-                $('#slt_quotation_contact').append("<option value='" + element.id + "'>" + element.name + " </option>");
-            });
-            $('#btn_mdl_contact').show();
-        });
-    });
     $("#clientQuoteProduct").change(function () {
         if ($(this).val() != "-1") {
-            $("#contactQuoteProduct").prop("disabled", false); 
-            $("#optionContactQuoteProduct").html("Selecciona un contacto"); 
+            $("#contactQuoteProduct").prop("disabled", false);
+            $("#optionContactQuoteProduct").html("Selecciona un contacto");
         } else {
             $("#contactQuoteProduct").val("-1");
             $("#contactQuoteProduct").prop("disabled", true);
@@ -49,11 +66,11 @@ function save(formulario) {
         type: 'post',
         url: 'project/create',
         headers: { 'X-CSRF-TOKEN': $('#token').val() },
-        /* data: $("#formulario").serialize(),  */
-        data: new FormData(formulario),
-        dataType: 'JSON',
-        processData: false,
+        data: new FormData(formulario),/* data: $("#formulario").serialize(),  */
+        dataType: "JSON",
         cache: false,
+        contentType: false,
+        processData: false,
         success: function (data) {
             Swal.fire({
                 type: 'success',

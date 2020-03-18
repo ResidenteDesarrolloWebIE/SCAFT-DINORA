@@ -59,8 +59,35 @@ class ProductController extends Controller{
     /* Nuevos metodos por nuevos requerimientos */
 
     public function create(Request $request){
-        /* dd($request->all()); */
-        return Response::json(['error' => false,'message' => "Cotizacion creada correctamente",'code' => 200], 200);
+        dd(
+            $request->clientQuoteProduct,
+            $request->contactQuoteProduct,
+            $request->dateQuoteProduct,
+            $request->fileQuotesProduct,
+            $request->descriptionQuoteProduct,
+            $request->noteQuoteProduct,
+            $request->biddingQuoteProduct,
+        ); 
+        try {
+            
+            $quotation = new product();
+            $quotation->folio = $request->clientQuoteProduct;
+            $quotation->description = $request->descriptionQuoteProduct;
+            $quotation->total_amount = $request->totalAmountQuoteProduct;
+            $quotation->status = $request->statusQuoteProduct;
+            $quotation->notes = $request->noteQuoteProduct;
+            $quotation->estimated_date = $request->estimatedDateQuoteProduct;
+            $quotation->bidding = $request->biddingQuoteProduct;
+            $quotation->user_id = $request->clientQuoteProduct;
+            $quotation->contact_id = $request->contactQuoteProduct;
+            $quotation->save();
+        } catch (\Throwable $th) {
+            dd($th);
+            /* return Response::json(['error' => false,'message' => "Cotizacion creada correctamente",'code' => 200], 200); */
+            abort(response()->json('Todo fue correcto', 200));
+        }
+        
+        
     }
     /* 
         $mypq = new product_quotation();
@@ -131,8 +158,7 @@ class ProductController extends Controller{
 
             $myProductQP->product_quotation_id = $mypq->id;
             $myProductQP->save();
-        }
-        	
+        } 	
         if($createFile==true){
         	return Redirect('quotationproductsview');
         }
