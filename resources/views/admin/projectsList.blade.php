@@ -75,7 +75,7 @@
         </div>
         @endif
         <a data-toggle="modal" data-target="#createQuoteProduct">
-            <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nueva cotizacion Suministro" data-placement="bottom">
+            <button id="btnSupply" type="button" class="btn btn-primary" data-toggle="tooltip" title="Crear nueva cotizacion Suministro" data-placement="bottom" onclick='createSupply(this.id);'>
                 Suministro<i class="fas fa-exchange-alt"></i>
             </button>
         </a>

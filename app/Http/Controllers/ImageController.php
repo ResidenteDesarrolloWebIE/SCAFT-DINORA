@@ -11,8 +11,7 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 
 
-class ImageController extends Controller
-{
+class ImageController extends Controller{
     public function postUpload(Request $request){
         $form_data = $request->all();
         $validator = Validator::make($form_data, Image::$rules, Image::$messages);
