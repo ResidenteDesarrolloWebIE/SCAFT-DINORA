@@ -21,11 +21,11 @@
 
     <link rel="stylesheet" href="{{asset('plugins/fileinput-4.3.6/css/fileinput.min.css') }}">
     <link rel="stylesheet" href="{{asset('plugins/fileinput-4.3.6/css/fileinput.css') }}">
-    
+
     <!-- <script src="{{asset('plugins/fileinput-5.9/css/fileinput.min.css') }}"></script> 
-    <script src="{{asset('plugins/fileinput-5.9/css/fileinput.css') }}"></script>
-    <script src="{{asset('plugins/fileinput-5.9/css/fileinput-rtl.min.css') }}"></script>
-    <script src="{{asset('plugins/fileinput-5.9/css/fileinput-rtl.css') }}"></script> -->
+    <script src="{{asset('plugins/fileinput-5.9/css/fileinput.css') }}"></script> -->
+    <!-- <link src="{{asset('plugins/fileinput-5.9/css/fileinput-rtl.min.css') }}">
+    <link src="{{asset('plugins/fileinput-5.9/css/fileinput-rtl.css') }}"> -->
  
     <link rel="stylesheet" href="{{asset('plugins/bootstrap-4.4.1/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{asset('plugins/dataTables-1.10.20/css/jquery.dataTables.min.css') }}">

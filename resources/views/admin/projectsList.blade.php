@@ -4,7 +4,7 @@
 @section('content')
 <section class="section-projects-admin py-2 text-xs-center">
     @include('layouts.partials._navigationBar')
-    <!--     <div class="container container-projects-admin">
+    <div class="container container-projects-admin">
         <div class="row table-responsive text-center projects-table">
             <h1 class="text-center">Lista de Proyectos</h1>
             <table class="table text-center table-sm-responsive" id="tableProjects">
@@ -14,7 +14,7 @@
                         <th> Folio</th>
                         <th> Nombre</th>
                         <th> Status</th>
-                        <th>Nombre</th> 
+                        <th>Nombre</th>
                         <th>Codigo</th>
                         <th>
                             Tipo
@@ -32,10 +32,11 @@
                         <td>{{$project->name}}</td>
                         <td>{{$project->status}}</td>
                         @if(is_null($project->service))
+                            <td>{{$project->product->user->name}}</td>
                             <td>{{$project->product->user->code}}</td>
                         @else
-                            <td>{{$project->service->user->name}}</td>
-                            <td>{{$project->service->user->code}}</td>
+                        <td>{{$project->service->user->name}}</td>
+                        <td>{{$project->service->user->code}}</td>
                         @endif
 
                         <td>
@@ -64,10 +65,9 @@
                 </tbody>
             </table>
         </div>
-    </div> -->
+    </div>
     @include('admin/modals/loadImages')
     @include('admin/modals/changeStatus')
-
     <div class="container container-projects-admin">
         @if(session('alert'))
         <div class="alert alert-success">

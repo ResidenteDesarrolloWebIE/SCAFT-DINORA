@@ -40,4 +40,5 @@ Route::group(['middleware' => ['auth','admin']], function () {
     Route::post('upload/delete', 'ImageController@deleteUpload');
     Route::get('server-images', 'ImageController@getServerImages')->name('server-images');
     Route::post('project/changeStatus', 'ProjectsController@changeStatus')->name('project-changeStatus');
+    Route::post('files', 'FileController@uploadFile')->name('uploadFile');
 });

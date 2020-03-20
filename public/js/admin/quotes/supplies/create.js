@@ -2,28 +2,29 @@ $(document).ready(function () {
     $("#file").fileinput({
         language: 'es',
         showRemove: true,
-        dropZoneEnabled : false , 
-        maxFileCount : 10 , 
-        mainClass : "input-group-lg" ,
+        dropZoneEnabled: false,
+        maxFileCount: 10,
+        mainClass: "input-group-lg",
         showZoom: true,
         showUpload: false,
         showCaption: true,
         showPreview: true,
         showCancel: false,
-        initialPreviewShowDelete:true,
+        initialPreviewShowDelete: true,
         /* allowedFileExtensions: ['pdf', 'PDF', 'CSV', 'XLS', 'XLSX', 'XLSM', 'csv', 'xls', 'xlsx', 'xlsm', 'pps', 'ppsx', 'ppt', 'pptx', 'PPS', 'PPSX', 'PPT', 'PPTX', 'doc', 'docx', 'DOC', 'DOCX', 'xml', 'xmls', 'XML', 'XMLS', 'JPG', 'jpg', 'JPEG', 'jpeg', 'PNG', 'png', 'rar', 'RAR', 'zip', 'ZIP'], */
-        allowedFileExtensions: ['pdf','PDF','CSV','csv','TXT','txt'],
+        allowedFileExtensions: ['pdf', 'PDF', 'CSV', 'csv', 'TXT', 'txt'],
         elErrorContainer: '#errorBlock',
         browseClass: "btn btn-success btn-sm btn-file-sm",
         browseLabel: "Buscar",
-        cancelLabel:"Cancelar",
+        cancelLabel: "Cancelar",
         removeClass: "btn btn-danger btn-sm",
         removeLabel: "Eliminar",
-        layoutTemplates: {progress: ''},
-        showDownload:true,
+        layoutTemplates: { progress: '' },
+        showDownload: true,
         fileActionSettings: {
             showZoom: true,
         },
+
     });
 
     $("#createQuoteProduct").on('hidden.bs.modal', function () {
@@ -42,9 +43,10 @@ $(document).ready(function () {
 
 
 function validationExtension() {
-    var fileInput = document.getElementById('fileQuotesProduct');
+    console.log("Debug");
+    var fileInput = document.getElementById('file');
     var filePath = fileInput.value;
-    var allowedExtensions = /(.jpg|.jpeg|.png|.pdf|.txt|.gif)$/i;
+    var allowedExtensions = /(.pdf|.txt)$/i;
     if (!allowedExtensions.exec(filePath)) {
         Swal.fire({
             type: 'error',

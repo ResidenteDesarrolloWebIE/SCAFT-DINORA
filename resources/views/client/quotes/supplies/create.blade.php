@@ -69,7 +69,11 @@
                     <!-- <div class="file-loading">
                         <input id="input-44" name="input44[]" type="file" multiple>
                     </div> -->
-                    <input id="file" name="file" type="file" multiple required>
+                    <!-- <input id="file" name="file" type="file" onchange="validationExtension()" multiple required> -->
+
+                    <input type="file" name="file" id="file"  accept="image/*" multiple required>
+                    <span id="errorFileQuotesProduct" style="color:red"></span>
+                    <!-- <input id="input-b1" name="input-b1" type="file" data-browse-on-zone-click="true" re> -->
                 </div>
             </div>
             <div class="modal-footer " style="justify-content: center;">
@@ -80,3 +84,13 @@
         </div>
     </div>
 </div>
+<!-- 
+    <div class="form-row">
+                        <div class="col">
+                            <div class="sm-form">
+                                <input type="file" name="file4" class="file" id="file4" accept="image/*" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="errorBlock"></div>
+ -->
